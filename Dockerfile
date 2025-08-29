@@ -13,8 +13,9 @@ COPY main.go .
 RUN go build -o app main.go
 
 # Expose the port your Go application listens on
-EXPOSE 8080
+EXPOSE 8000
 
 # Command to run the executable when the container starts
 
 CMD ["/app/app"]
+
